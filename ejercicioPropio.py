@@ -22,8 +22,8 @@ from PyQt5 import uic
 import sys
 
 class Cine(QMainWindow):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
         # Cargar el archivo .ui
         uic.loadUi(r"C:\Users\ar151\OneDrive\Escritorio\hola\Laboratorio-1---Computo-2\disenioTicket.ui", self)
         

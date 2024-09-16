@@ -8,8 +8,8 @@ from PyQt5 import uic
 import sys
 
 class caracter(QMainWindow):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
     #Se llama al archivo del designer para ser utilizado.
 
         uic.loadUi(r"C:\Users\ar151\OneDrive\Escritorio\hola\Laboratorio-1---Computo-2\disenioCaracteristicas.ui", self)
