@@ -13,7 +13,8 @@ class datos(QMainWindow):
     def __init__(self):
         super().__init__()
     #Se llama al archivo del designer para ser utilizado junto a sus labels, line edits y botones
-        uic.loadUi("Laboratorio-1---Computo-2/disenioEdad.ui", self)
+    #COLOQUE SU RUTA, por alguna razon si no es absoluta la ruta no nos dejaba ejecutar
+        uic.loadUi(r"C:\progra3\LAB1_2\Laboratorio-1---Computo-2\disenioEdad.ui", self)
     #Se busca el widget a utilizar mediante su nombre en el designer
         self.nombre = self.findChild(QLineEdit,"lne1")
         self.edad = self.findChild(QLineEdit,"lne2")
