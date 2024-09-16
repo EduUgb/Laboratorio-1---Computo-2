@@ -13,7 +13,8 @@ class cedName(QMainWindow):
         super().__init__()
     #Se llama al archivo del designer para ser utilizado.
     #COLOQUE SU RUTA, por alguna razon si no es absoluta la ruta no nos dejaba ejecutar
-        uic.loadUi(r"C:\progra3\LAB1_2\Laboratorio-1---Computo-2\disenioCedula.ui", self)
+        #uic.loadUi(r"C:\progra3\LAB1_2\Laboratorio-1---Computo-2\disenioCedula.ui", self)
+        uic.loadUi(r"C:\Users\ar151\OneDrive\Escritorio\hola\Laboratorio-1---Computo-2\disenioCedula.ui", self)
         self.nombre = self.findChild(QLineEdit,"lne1")
         self.cedula = self.findChild(QLineEdit,"lne2")
         self.boton = self.findChild(QPushButton,"btnMostrar")
