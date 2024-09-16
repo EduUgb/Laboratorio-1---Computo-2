@@ -60,6 +60,12 @@ class mascotReg(QMainWindow):
         # Actualizamos las etiquetas después de añadir la mascota
         self.ActualizarLabels()
 
+        #Limpiamos las cajas de texto
+        self.nombreAn.clear()
+        self.edadAn.clear()
+        self.especieAn.clear()
+        self.razaAn.clear()
+
     # Función para actualizar los labels
     def ActualizarLabels(self):
        #Actualizamos los datos de las 3 mascotas segun la cantidad de datos que tenga la lista, esto lo hacemos mediante el if
