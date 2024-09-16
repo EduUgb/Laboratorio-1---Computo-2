@@ -13,7 +13,7 @@ class password(QMainWindow):
     def __init__(self):
         super().__init__()
     #Se llama al archivo del designer para ser utilizado.
-        uic.loadUi(r"C:\progra3\LAB1_2\Laboratorio-1---Computo-2\disenioPassword.ui", self)
+        uic.loadUi("Laboratorio-1---Computo-2/disenioPassword.ui", self)
         self.password = self.findChild(QLineEdit,"lne2")
         self.boton = self.findChild(QPushButton,"btnAcceder")
         self.label = self.findChild(QLabel,"lbl3")
